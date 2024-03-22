@@ -1,9 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/media-query.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Kitanda</title>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <a href="#home" class="logo">
+        <h1 class="logo-nav">
+          <img class="icon-logo" src="./src/assets/logo.svg" alt="" />
+          <span class="da">Kitanda</span>
+        </h1>
+      </a>
+      <ul>
+        <li class="nav-item">
+          <a href="#home" class="nav-link" id="nav-link ">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#features" class="nav-link" id="nav-link ">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#categories " class="nav-link" id="nav-link ">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a href="#review " class="nav-link" id="nav-link ">Review</a>
+        </li>
+        <li class="nav-item">
+          <a href="#blogs " class="nav-link" id="nav-link ">Blogs</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav-button">
+        <div class="icon"><img src="./src/assets/search.svg" alt="" /></div>
+        <div class="icon"><img src="./src/assets/product.svg" alt="" /></div>
+        <div class="icon"><img src="./src/assets/profile.svg" alt="" /></div>
+      </div>
+    </nav>
+    <main>
+      <img class="icon-bg" src="./src/assets/bg.png" alt="" />
+      <div class="main-text">
+        <div class="texts">
+          <span class="text-1">Fresh And </span>
+          <span class="text-2">Organic</span>
+          <span class="text-3">Products For You</span>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <button class="main-button">
+          <a href="#shop-now" class="button">Shop Now</a>
+        </button>
+      </div>
+
+      <div class="main-itens">
+        <h2 class="item-title">
+          <span class="title-1">Our</span>
+          <span class="title-2">Features</span>
+        </h2>
+
+        <div class="item-1">item-1</div>
+        <div class="item-2">item-2</div>
+        <div class="item-3">item-3</div>
+      </div>
+    </main>
+  </body>
 </html>
