@@ -3,75 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/styles.css" />
-    <link rel="stylesheet" href="./src/styles/media-query.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/media-query.css" />
     <link
       rel="shortcut icon"
       href="./src/assets/favicon.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Kitanda</title>
   </head>
   <body>
-    <nav>
-      <a href="#home" class="logo">
-        <h1 class="logo-nav">
-          <img class="icon-logo" src="./src/assets/logo.svg" alt="" />
-          <span class="da">Kitanda</span>
-        </h1>
+    <header class="header">
+      <a href="#" class="logo">
+        <img class="icon-logo" src="./src/assets/logo.png" alt="" />
+        Kitanda
       </a>
-      <ul>
-        <li class="nav-item">
-          <a href="#home" class="nav-link" id="nav-link ">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#features" class="nav-link" id="nav-link ">Features</a>
-        </li>
-        <li class="nav-item">
-          <a href="#categories " class="nav-link" id="nav-link ">Categories</a>
-        </li>
-        <li class="nav-item">
-          <a href="#review " class="nav-link" id="nav-link ">Review</a>
-        </li>
-        <li class="nav-item">
-          <a href="#blogs " class="nav-link" id="nav-link ">Blogs</a>
-        </li>
-      </ul>
-      <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#categories">Categories</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
       </div>
-      <div class="nav-button">
-        <div class="icon"><img src="./src/assets/search.svg" alt="" /></div>
-        <div class="icon"><img src="./src/assets/product.svg" alt="" /></div>
-        <div class="icon"><img src="./src/assets/profile.svg" alt="" /></div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
       </div>
-    </nav>
-    <main>
-      <img class="icon-bg" src="./src/assets/bg.png" alt="" />
-      <div class="main-text">
-        <div class="texts">
-          <span class="text-1">Fresh And </span>
-          <span class="text-2">Organic</span>
-          <span class="text-3">Products For You</span>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./src/assets/frutas/cebola.png" alt="" />
+          <div class="content">
+            <h3>Melancia</h3>
+            <span class="price">R$4.99/-</span>
+            <span class="quantify">qtd : 1</span>
+          </div>
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <button class="main-button">
-          <a href="#shop-now" class="button">Shop Now</a>
-        </button>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./src/assets/frutas/alface.png" alt="" />
+          <div class="content">
+            <h3>Alface</h3>
+            <span class="price">R$4.99/-</span>
+            <span class="quantify">qtd : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./src/assets/frutas/tomate.png" alt="" />
+          <div class="content">
+            <h3>Tomate</h3>
+            <span class="price">R$4.99/-</span>
+            <span class="quantify">qtd : 1</span>
+          </div>
+        </div>
+        <div class="total">total : R$19.69/-</div>
+        <a href="#" class="btn">checkout</a>
       </div>
 
-      <div class="main-itens">
-        <h2 class="item-title">
-          <span class="title-1">Our</span>
-          <span class="title-2">Features</span>
-        </h2>
+      <form action="" class="login-form">
+        <h3>Login agora</h3>
+        <input type="email" placeholder="seu email" class="box" />
+        <input type="password" placeholder="sua senha" class="box" />
+        <p>esqueça sua senha <a href="#">click aqui</a></p>
+        <p>não tenho uma conta <a href="#">crie agora</a></p>
+        <input type="submit" value="login agora" class="btn" />
+      </form>
+    </header>
 
-        <div class="item-1">item-1</div>
-        <div class="item-2">item-2</div>
-        <div class="item-3">item-3</div>
-      </div>
-    </main>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
