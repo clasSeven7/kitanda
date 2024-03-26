@@ -35,8 +35,8 @@
 
 **📚Bibliotecas utilizadas**
 
-- [Font Awesome](https://fontawesome.com/)
-- [Swiper.js](https://swiperjs.com/)
+- [Font Awesome](./docs/swiper-js.md)
+- [Swiper.js](./docs/font-awesome.md)
 
 **🚀Tecnologias:**
 
